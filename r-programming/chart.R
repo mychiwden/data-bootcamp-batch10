@@ -24,14 +24,14 @@ ggplot(d, aes(cut, fill = cut)) +
   )) 
   
 ```
- -Ideal cut diamonds are the most popular cut, while Fair is the least common cut in the data.
+ ##-Ideal cut diamonds are the most popular cut, while Fair is the least common cut in the data.
 
 ## My Second Histogram Chart
 ```{r}
 ggplot(d, aes(price)) +
   geom_histogram(bin = 10, fill ="#7bdbd3", color ="black")
 ```
--This chart shows that diamond prices are skewed right, with the majority in the low price range (0-5,000 USD) and significantly fewer in the high price range.
+##-This chart shows that diamond prices are skewed right, with the majority in the low price range (0-5,000 USD) and significantly fewer in the high price range.
 
 
 ## My Third violin chart
@@ -41,7 +41,7 @@ ggplot(d |> sample_n(2000)
   geom_violin(fill = "#79c7d1") +
   theme_minimal()
 ```
-- This graph shows the price behavior of diamonds in different cut grades, with Premium and Ideal having the widest price spread and covering very high prices, while Fair has the lowest price spread and the narrowest spread.
+##- This graph shows the price behavior of diamonds in different cut grades, with Premium and Ideal having the widest price spread and covering very high prices, while Fair has the lowest price spread and the narrowest spread.
 
 
 ## My Fourth point chart
@@ -63,7 +63,7 @@ ggplot()+
              color = "#f28763", alpha = 0.5)+
   theme_minimal()
 ```
--This chart clearly shows the relationship between diamond weight and price, using colors to separate the data. Carat weight and price increase in the same direction with higher volatility as the Carat value increases.
+##-This chart clearly shows the relationship between diamond weight and price, using colors to separate the data. Carat weight and price increase in the same direction with higher volatility as the Carat value increases.
 
 
 ## This my Five Scater Chart
@@ -88,4 +88,4 @@ d |>
   )
 ```
 
- This graph show relationship of depth with price. The price initially increases slowly until reaching its peak (~ Carat 58-59) before decreasing as the Carat gets higher.
+## This graph show relationship of depth with price. The price initially increases slowly until reaching its peak (~ Carat 58-59) before decreasing as the Carat gets higher.
